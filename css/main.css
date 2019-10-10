@@ -19,11 +19,12 @@ html {
 .btn {
   border: 3px solid #b4fff4;
   text-shadow: 1px 1px #90ccc3;
+  position: relative;
 }
 
 .btn:active {
-  transform: translateY(4px);
-  transform-origin: left top;
+  top: 4px;
+  transition: all 250ms linear;
 }
 
 a {
@@ -38,9 +39,6 @@ a {
 }
 
 .btn-ghost {
-  /* position: absolute;
-  z-index: -1;
-  top: 50%; */
   border-color: #b4fff4;
   border-radius: 4px;
   transition: all 250ms linear;
